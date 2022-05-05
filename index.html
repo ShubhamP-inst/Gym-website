@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitflex - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        background: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80c');
+        padding: 0px;
+        margin: 0px;
+    }
+    /* .header {
+        border: 3px solid white;
+    } */
+    
+    .left {
+        display: inline-block;
+        /* border: 3px solid red; */
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 100px;
+        cursor: pointer;
+        /* filter: invert(100%); */
+    }
+
+    .logoName{
+        text-align: center;
+        line-height: 15px;
+    }
+
+    .mid {
+        display: block;
+        width: 30%;
+        margin: 30px auto;
+        /* border: 3px solid green; */
+    }
+
+    .right {
+        box-sizing: border-box;
+        display: inline-block;
+        position: absolute;
+        /* border: 3px solid red; */
+        top: 32px;
+        right: 25px;
+    }
+
+    .navbar {
+        display: inline-block;
+        margin: auto;
+    }
+
+    .navbar li {
+        font-size: 18px;
+        display: inline-block;
+        list-style: none;
+        margin: 8px 15px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+    }
+    .navbar li a:hover {
+        color: yellow;
+        text-decoration: underline;
+    }
+
+    .btn{
+        font-family: 'Baloo Bhai 2', cursive;
+        border: 2px solid grey;
+        border-radius: 3px;
+        color: white;
+        background-color: black;
+        padding: 3px 8px;
+        margin: 3px auto;
+    }
+    .btn:hover{
+        text-decoration: underline;
+        border: 2px solid grey;
+        border-radius: 3px;
+        color: white;
+        background-color: rgb(107, 107, 107);
+        padding: 3px 8px;
+        margin: 3px auto;
+    }
+    .container {
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 2px solid white;
+        margin: 100px auto;
+        padding: 65px;
+        width: 33%;
+        border-radius: 20px;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .formGrp input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        /* display: block; */
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 2px auto;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+    .container button{
+        width: 512px;
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        padding: 2px;
+        margin: 3px auto;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="Img/logo.jpg">
+            <div class="logoName">Fitflex</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li class="page"><a href="#">Home</a></li>
+                <li class="page"><a href="#">About</a></li>
+                <li class="page"><a href="#">Facilities</a></li>
+                <li class="page"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="button">
+                <button class="btn">Go to our facebook page</button>
+                <button class="btn">Go to our instagram page</button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Searching for a proper fitness diet? We got you covered:</h2>
+        <form action="backend.js">
+            <div class="formGrp">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="formGrp">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="formGrp">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="formGrp">
+                <input type="text" name="" placeholder="Enter your weight">
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
